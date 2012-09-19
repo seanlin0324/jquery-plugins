@@ -1,7 +1,8 @@
 ;(function($) {
     $.fn.resizeTrigger = function(settings) {
         var _defaultSettings = {
-            trigger: ''
+            onEvent: function(){ console.log('resize end'); },
+            intervals: 500
         };
         var _settings = $.extend(_defaultSettings, settings);
         var _handler = function() {
@@ -9,7 +10,7 @@
             $(this).resize(function () {
                 registerEventTrigger(function(){
                     return _settings.onEvent();
-                }, 500, "resize");
+                }, _settings.intervals, "resize");
             });
            
         };
