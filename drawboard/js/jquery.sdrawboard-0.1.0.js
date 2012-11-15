@@ -1,4 +1,4 @@
-// Drag and Drop Box v0.1.0 - jQuery Drag and Drop plugin
+// Draw Board v0.1.0 - jQuery Draw Board plugin
 // (c) 2012 Sean Lin - http://seanlin0324.blogspot.tw/
 // License: http://www.opensource.org/licenses/mit-license.php
 
